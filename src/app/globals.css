@@ -1,0 +1,304 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* Main */
+body {
+  background: white;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  min-width: 390px;
+  min-height: 100vh;
+}
+
+html {
+  width: 100%;
+  min-width: 390px;
+  min-height: 100vh;
+}
+
+.mainContainer {
+  max-width: 1920px;
+}
+
+/* Navbar */
+nav {
+  padding: 24px 0px;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background-color: white;
+}
+
+.navbarContainer {
+  height: 41px !important;
+  gap: 32px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: 0px 80px !important;
+  justify-content: space-between;
+}
+
+.navbarLogo {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.navbarLinks {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.navbarLogin {
+  padding: 10px 20px;
+  background: blue;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Section */
+
+section {
+  width: 100%;
+  display: flex;
+}
+
+/* Hero */
+
+.hero {
+  gap: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 0px 80px;
+}
+
+.heroText h1 {
+  font-size: 60px;
+  line-height: 60px;
+  vertical-align: center;
+  text-align: center;
+}
+
+.heroText p {
+  text-align: center;
+  font-size: 20px;
+}
+
+.heroText {
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero img {
+  width: 100%;
+}
+
+/* Partners */
+
+.partners {
+  padding: 96px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  width: 100%;
+}
+
+.partners h1 {
+  width: 100%;
+  text-align: center;
+}
+
+.logos {
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: row;
+  display: flex;
+}
+
+.logos img {
+  width: auto;
+  height: 48px;
+}
+
+/* Why */
+
+.why {
+  display: flex;
+  flex-direction: column;
+  padding: 96px 80px;
+  gap: 64px;
+  width: 100%;
+}
+
+.why h1 {
+  text-align: center;
+}
+
+.why p {
+  text-align: center;
+}
+
+.whyText {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.whyLists {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+}
+
+.whyLists .list {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  width: 100%;
+
+}
+
+.whyLists .list .box {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 16px;
+  background: white !important;
+  border-radius: 8px;
+}
+
+.whyLists .list .box p {
+  text-align: left !important;
+}
+
+.whyLists .list .box h1 {
+  text-align: left !important;
+}
+
+.box .icon {
+  height: 48px;
+  width: 48px;
+  border-radius: 8px;
+  background: rgb(0, 208, 255) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box .icon img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Green */
+
+.green {
+  padding: 96px 80px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background: white;
+  gap: 64px;
+}
+
+.greenText {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  justify-content: center;
+}
+
+.green .lists {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 32px;
+}
+
+.green .lists .list {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 32px;
+}
+
+.green .lists .list .box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 16px;
+}
+
+.green .lists .list .boxText {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 8px;
+}
+
+
+.green .lists .list .box .icon {
+  
+}
+
+.green .lists .list .box img {
+  
+}
+
+.green .lists .list .box h2 {
+  
+}
+
+.green .lists .list .box p {
+  
+}
+
+/* Statistics */
+
+/* Footer */
+
+footer {
+  width: 100%;
+}
+
+footer .footerContainer {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 64px 0px;
+  width: 100%;
+}
+
+footer .footerContainer .footerList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
